@@ -1,0 +1,6 @@
+<ul>
+    <li><a href="{% url 'myapp:index' %}">Главная страница</a></Li>
+    <li><a href="{% url 'myapp:about' %}">О Нас</a></Li>
+    <li><a href="{% url 'myapp:galery' %}">Галерея</a></Li>
+    <li><a href="{% url 'myapp:contact' %}">Контакты</a></Li>
+</ul>
