@@ -14,9 +14,11 @@
     </div>
     <br>
     <br>
+    <br>
     <p class="lead">Мы рады видеть вас на нашей главной странице. Здесь вы найдете самую актуальную информацию о нас и наших услугах.</p>
     <br>
+    <br>
     <p>Узнайте больше о нашей компании и команде, посетив раздел "О Нас".</p>
-    <a class="btn btn-primary btn-lg" href="{% url 'myapp:about' %}" role="button">Узнать больше</a>
+    <a class="btn btn-primary btn-lg" href="{% url 'about' %}" role="button">Узнать больше</a>
 </div>
 {% endblock %}
