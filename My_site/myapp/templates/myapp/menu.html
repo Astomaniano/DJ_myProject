@@ -1,6 +1,26 @@
-<ul>
-    <li><a href="{% url 'myapp:main' %}">Главная страница</a></Li>
-    <li><a href="{% url 'myapp:about' %}">О Нас</a></Li>
-    <li><a href="{% url 'myapp:galery' %}">Галерея</a></Li>
-    <li><a href="{% url 'myapp:contact' %}">Контакты</a></Li>
-</ul>
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Изменено на navbar-dark bg-dark -->
+    <a class="navbar-brand" href="{% url 'myapp:main' %}">
+        <img src="{% static 'myapp/img/comp.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+        Просто Сайт
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'myapp:main' %}">Главная страница</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'myapp:about' %}">О Нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'myapp:galery' %}">Галерея</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'myapp:contact' %}">Контакты</a>
+            </li>
+        </ul>
+    </div>
+</nav>
